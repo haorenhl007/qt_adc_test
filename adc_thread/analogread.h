@@ -13,7 +13,8 @@ public:
   explicit AnalogRead(QObject *parent = 0);
   void run(void);
 signals:
-
+ void hall_event(int val);
+ void batt_event(int val);
 public slots:
 
 private:
